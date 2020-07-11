@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <link rel="icon" href="Stopwatch1.ico">
+        <title>Stop Watch</title>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <style>
+
+            body {
+                /* background: linear-gradient(grey,blue,rgb(206, 99, 99)); */
+                background-image: url('img/Bg.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 0%;
+                margin: 0%;
+            }
+            .stopwatch {
+                height: 200px;
+                width: 200px;
+                border: 18px solid #fafcf7;
+                position: absolute;
+                margin: auto;
+                top: 0px;
+                bottom: 0%;
+                left: 0px;
+                right: 0px;
+                border-radius: 50%;
+            }
+            .button1 {
+                background-color: #fafcf7;
+                height: 12px;
+                width: 28px;
+                position: absolute;
+                left: 85px;
+                top: -45px;
+            }
+
+            .button1:before {
+                content: "";
+                position: absolute;
+                height: 24px;
+                width: 50px;
+                background-color: #fafcf7;
+                bottom: 12px;
+                left: -11px;
+            }
+            .button2 {
+                background-color: #fafcf7;
+                height: 18px;
+                width: 28px;
+                left: 196px;
+                position: absolute;
+                bottom: 186px;
+                transform: rotate(45deg);
+            }
+
+            #button {
+                width: 100px;
+                margin-top: 320px;
+                height: 40px;
+            }
+
+            .button {
+                margin-left: 525px;
+            }
+
+    
+      h1 {
+          display: inline-block;
+          color: black;
+          width: 40px;
+          margin-top: -10px;
+          background-color: aliceblue;
+          
+      }
+
+      #min {
+          border-radius: 50%;
+          height: 40px;
+          margin-left: 40px;
+          text-align: center;
+    
+      }
+
+      #sec {
+        border-radius: 50%;
+        height: 40px;
+        text-align: center;
+      }
+
+      #msec {
+        border-radius: 50%;
+        height: 40px;
+        text-align: center;
+      }
+
+
+      p {
+          display: inline-block;
+          margin-top: 60px;
+          width: 35px;
+          color: black;
+          font-weight: bolder;
+      }
+
+      .p {
+          margin-left: 45px;
+      }
+
+      .p1 {
+          margin-left: 3px;
+      }
+
+      .p2 {
+          margin-left: 7px;
+      }
+      .para {
+          font-size: 40px;
+          width: 900px;
+          text-align: center;
+          margin-left: 250px;
+      }
+      
+      
+        </style>
+    </head>
+    <body>
+
+        <p class="para">Time moves slowly but passes quickly..<span><i class='far fa-grin-hearts' style='font-size:24px'></i></span><span><i class='far fa-grin-hearts' style='font-size:24px'></i></span>
+        </p>
+        <div class="stopwatch">
+            <div>
+                <p class="p">Min:</p>
+                <p class="p2">Sec:</p>
+                <p class="p1">MSec:</p>
+            </div>
+            <div>
+                <h1 id="min">0</h1>
+                <h1 id="sec">0</h1>
+                <h1 id="msec">0</h1>
+            </div>
+            <div class="button1"></div>
+            <div class="button2"></div>
+        </div>
+            <div>
+                <button class="button" id="button" onclick="start()">Start</button>
+                <button id="button" onclick="stop()">Stop</button>
+                <button id="button" onclick="reset()">Reset</button>
+            </div>
+            <script src="app1.js"></script>
+    </body>
+</html>
